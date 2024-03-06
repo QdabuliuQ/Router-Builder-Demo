@@ -1,7 +1,10 @@
 <router></router>
 
 <template>
-  <div>PageBA</div>
+  <div>
+    <div>PageBA</div>
+    <router-view />
+  </div>
 </template>
 
 <script>

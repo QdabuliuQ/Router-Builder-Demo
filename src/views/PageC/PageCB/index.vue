@@ -1,7 +1,10 @@
 <router></router>
 
 <template>
-  <div>PageCB</div>
+  <div>
+    <div>PageCB</div>
+    <router-view />
+  </div>
 </template>
 
 <script>

@@ -1,5 +1,4 @@
 <router>
-  module: "PageA",
   name: "PageA",
   import: {
     "@/utils/index": [
@@ -10,18 +9,27 @@
       }
     ]
   },
-  beforeEnter: function() {
+  beforeEnter: function(to, from , next) {
     getTime()
     getDate()
+    next()
   }
 </router>
 
 <template>
-  <div>PageA</div>
+  <div>
+    <div>PageA</div>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "PageA",
+  mounted() {
+    console.log("挂在");
+  },
+};
 </script>
 
 <style></style>

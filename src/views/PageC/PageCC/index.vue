@@ -1,7 +1,10 @@
 <router></router>
 
 <template>
-  <div>PageCC</div>
+  <div>
+    <div>PageCC</div>
+    <router-view />
+  </div>
 </template>
 
 <script>

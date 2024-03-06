@@ -13,7 +13,10 @@
 </router>
 
 <template>
-  <div>PageCA</div>
+  <div>
+    <div>PageCA</div>
+    <router-view />
+  </div>
 </template>
 
 <script>

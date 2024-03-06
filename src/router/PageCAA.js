@@ -1,12 +1,11 @@
-import defaultIndexMethod, { index, abc as _abc } from "demo";
+import defaultIndexMethod, { index, abc as _abc } from "@/utils/demo";
 export default {
-  path: "/D:\\code\\demo02\\src\\views\\PageC\\PageCA/PageCAA",
-  beforeEnter: function () {
+  path: "/PageC/PageCA/PageCAA",
+  beforeEnter: function (to, from, next) {
     index();
     defaultIndexMethod();
+
+    next();
   },
-  component: () =>
-    import(
-      "@/views/D:\\code\\demo02\\src\\views\\PageC\\PageCA/PageCAA/index.vue"
-    ),
+  component: () => import("@/views/PageC/PageCA/PageCAA/index.vue"),
 };

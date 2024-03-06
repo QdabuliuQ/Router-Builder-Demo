@@ -1,7 +1,7 @@
 <router>
   module: "PageCAA",
   import: {
-    "demo": [
+    "@/utils/demo": [
       "index",
       {
         name: "abc",
